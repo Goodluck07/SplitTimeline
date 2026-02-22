@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static System.Net.Mime.MediaTypeNames;
 
-public class GameOverButtons : MonoBehaviour
+public class GameOverManager : MonoBehaviour
 {
+    public static int lastPlayedLevel = 2;
+
     public void TryAgain()
     {
-        SceneManager.LoadScene("level1"); // <-- change if your scene name is different
+        SceneManager.LoadScene(lastPlayedLevel);
     }
 
     public void QuitGame()

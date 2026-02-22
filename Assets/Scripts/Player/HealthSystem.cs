@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -37,15 +38,15 @@ public class HealthSystem : MonoBehaviour
     void Die()
     {
         playerController.Die();
-        Invoke("Respawn", 1.5f);
+        GameOverManager.lastPlayedLevel = SceneManager.GetActiveScene().buildIndex;
+        Invoke("LoadGameOver", 1.5f);
     }
 
-    void Respawn()
+    void LoadGameOver()
     {
-        sharedHealth = maxHealth;
-        initialized = false;
-        LevelManager.Instance.ResetLevel();
+        SceneManager.LoadScene("GameOver");
     }
+
 
     public float GetHealth() => sharedHealth;
 }

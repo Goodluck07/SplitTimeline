@@ -422,19 +422,19 @@ MonoBehaviour:
 
     People depended on it.
 
-    Time broke
-    it.
+    Time broke it.
 
-    
 
-    You exist between what was...
+
+    You
+    exist between what was...
 
     and what remains.
 
-    
 
-    Go
-    back. Fix what you can.
+
+    Go back. Fix what you
+    can.
 
     Return forward.'
   m_isRightToLeft: 0
@@ -937,6 +937,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822474167}
   m_CullTransparentMesh: 1
+--- !u!1 &1876318803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1876318805}
+  - component: {fileID: 1876318804}
+  m_Layer: 0
+  m_Name: PrologueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1876318804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876318803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6bf15a8f875aa47a03d4508f5dc6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prologue
+--- !u!4 &1876318805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876318803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 409.67014, y: 223.37961, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2078171034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,3 +1094,4 @@ SceneRoots:
   - {fileID: 133581538}
   - {fileID: 2078171038}
   - {fileID: 51515598}
+  - {fileID: 1876318805}
