@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static System.Net.Mime.MediaTypeNames;
 
 public class GameOverManager : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class GameOverManager : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-        Application.Quit();
+        UnityEngine.Application.Quit();
 #endif
     }
 }
