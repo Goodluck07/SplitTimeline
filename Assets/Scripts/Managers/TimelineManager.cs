@@ -6,9 +6,11 @@ public class TimelineManager : MonoBehaviour
     public GameObject pastBackground;
     public GameObject futureBackground;
 
+    [Header("Character Switch")]
+    public CharacterSwitch characterSwitch;
+
     [Header("Settings")]
     public bool startInPast = true;
-
     private bool isPast;
 
     void Start()
@@ -19,7 +21,6 @@ public class TimelineManager : MonoBehaviour
 
     void Update()
     {
-        // Press TAB to switch timelines
         if (Input.GetKeyDown(KeyCode.E))
         {
             SwitchTimeline();
@@ -30,6 +31,9 @@ public class TimelineManager : MonoBehaviour
     {
         isPast = !isPast;
         ApplyTimeline();
+
+        if (characterSwitch != null)
+            characterSwitch.SwitchCharacter(isPast);
     }
 
     void ApplyTimeline()
