@@ -32,6 +32,17 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    void OnEnable()
+    {
+        if (anim != null)
+        {
+            anim.SetFloat("Speed", 0);
+            anim.SetBool("IsGrounded", true);
+            anim.SetBool("IsDead", false);
+            anim.Play("Idle");
+        }
+    }
+
     void Update()
     {
         if (isDead) return;

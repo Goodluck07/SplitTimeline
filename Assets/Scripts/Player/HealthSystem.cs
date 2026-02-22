@@ -4,13 +4,24 @@ public class HealthSystem : MonoBehaviour
 {
     public static float sharedHealth = 100f;
     public static float maxHealth = 100f;
+    private static bool initialized = false;
 
     private PlayerController playerController;
 
-    void Start()
+    void Awake()
     {
-        sharedHealth = maxHealth;
         playerController = GetComponent<PlayerController>();
+
+        if (!initialized)
+        {
+            sharedHealth = maxHealth;
+            initialized = true;
+        }
+    }
+
+    void OnDestroy()
+    {
+        initialized = false;
     }
 
     public void TakeDamage(float amount)
@@ -32,6 +43,7 @@ public class HealthSystem : MonoBehaviour
     void Respawn()
     {
         sharedHealth = maxHealth;
+        initialized = false;
         LevelManager.Instance.ResetLevel();
     }
 

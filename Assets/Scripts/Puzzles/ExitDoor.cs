@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ExitDoor : MonoBehaviour
 {
-    public string nextSceneName = "level1";
+    public string nextSceneName = "level2";
     private Animator anim;
     private bool isOpen = false;
 

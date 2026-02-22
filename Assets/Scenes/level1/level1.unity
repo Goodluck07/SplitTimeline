@@ -1473,7 +1473,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 119751590503199221, guid: caaf749b762586140aee036af5f5f381, type: 3}
       propertyPath: jumpForce
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 119751590503199221, guid: caaf749b762586140aee036af5f5f381, type: 3}
       propertyPath: moveSpeed
@@ -1586,10 +1586,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3508514378650044227, guid: caaf749b762586140aee036af5f5f381, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1992894621}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caaf749b762586140aee036af5f5f381, type: 3}
 --- !u!1 &552059862
 GameObject:
@@ -7576,18 +7573,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4290200932459651861, guid: caaf749b762586140aee036af5f5f381, type: 3}
   m_PrefabInstance: {fileID: 535083091}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1992894621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992894613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b3dab712433be245b73319a67eda36b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!1 &1997424418
 GameObject:
   m_ObjectHideFlags: 0
@@ -12428,6 +12413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerFuture
       objectReference: {fileID: 0}
+    - target: {fileID: 3869449048897057847, guid: 428bb53a4e45b064d9b269370b7f4d80, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6692509587124958783, guid: 428bb53a4e45b064d9b269370b7f4d80, type: 3}
       propertyPath: m_Controller
       value: 
@@ -12458,7 +12447,7 @@ PrefabInstance:
       objectReference: {fileID: 4723107735738678597, guid: 0e3502a80399d164ea01f1868f65acbf, type: 3}
     - target: {fileID: 8667504037835026674, guid: 428bb53a4e45b064d9b269370b7f4d80, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
