@@ -4,7 +4,7 @@ public class TryAgainButton : MonoBehaviour
 {
     public GameOverButtons manager;
 
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         manager.TryAgain();
     }
