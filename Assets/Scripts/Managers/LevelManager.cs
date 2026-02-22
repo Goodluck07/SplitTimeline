@@ -22,7 +22,9 @@ public class LevelManager : MonoBehaviour
 
     public void LoadNextLevel(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        UnityEngine.Debug.Log("Loading scene: " + sceneName);
+        int currentIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentIndex + 1);
     }
 
     void Update()
